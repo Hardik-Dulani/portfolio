@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Hardik Dulani</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hardik Dulani</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class=" about-pic section__pic-container" >
+        <img src="./assets/Hardik.jpg" alt="profile picture" style="
+          border: 5px solid #666c70; border-radius: 2rem;"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hardik</h1>
+        <p class="section__text__p2">FullStack Developer/Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/updated_cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/hardik-dulani-6a2165197/','_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Hardik-Dulani','_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Freelance <br />FullStack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech. Bachelors Degree<br />Vellore Institute of Technology,Bhopal</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Jack of All, Master of One. That One is Learning new skills.
+I have been tirelessly working to gain skills in the fields of development and data analytics,
+and building proficiency in Python, Django, HTML, JS and Power Bi.
+Teaching is my passion and I was formerly a teacher of computer science for 2nd PUC students at UrbanPro.com and Ex- Student Representative at CloudZone Club VITB.
+I have also been an active participant in Rotary Interact club, as I love helping the needy.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">FullStack Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>API integration</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cloud/Database</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Version Control</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SEO/Design</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analysis</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R Language</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS-Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Cleaning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power Bi</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                
+                src="./assets/inspire-medications.jpg"
+                alt="inspire-medications"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Inspire Medications</h2>
+            <h6 style="font-size: medium;" class="experience-sub-title ">Backend Freelance</h6>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ScaleMe-in/Inspire'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://inspiremedications.in/'"
+              >
+                Live Site
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              
+                src="./assets/thistle.jpg"
+                alt="thistle"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Thistle Skincare</h2>
+            <h6 style="font-size: medium;" class="experience-sub-title ">Backend Freelance</h6>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Hardik-Dulani/thistle'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://xmos640.pythonanywhere.com/'"
+              >
+                Live Site
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              
+                src="./assets/cyclistic.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cyclistic Data Analysis</h2>
+            <h6 style="font-size: medium;" class="experience-sub-title ">Capstone Project</h6>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/cyclistic-dataset.zip')"
+              >
+                Data
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                
+                onclick="window.open('./assets/Cyclistic Analysis 2022.pdf')"
+              >
+                View PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#certifications'"
+      />
+    </section>
+    <div class="details-container certifications" id="certifications">
+      <h2 class="experience-sub-title">Certifications</h2>
+      <div class="article-container">
+        <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/88619224"><div>
+            <h3>Cloud Digital Leader</h3>
+            <p>Google</p>
+          </div>
+        </a>
+
+        </article>
+        <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <a href="https://drive.google.com/file/d/19mJ9kUHwaZiut66XhD5Gd7L2EJoSYlF7/view?usp=sharing"><div>
+            <h3>Google Data Analytics</h3>
+            <p>Google</p>
+          </div>
+        </a>
+
+        </article>
+        <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <a href="#certificationaws"><div>
+            <h3>Cloud Practioner</h3>
+            <p>Amazon Web Services</p>
+          </div>
+        </a>
+
+        </article>
+        <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <a href="https://simpli-web.app.link/e/xEDm1cFXuFb"><div>
+            <h3>AWS fundamentals</h3>
+            <p>Simplilearn</p>
+          </div>
+        </a>
+
+        </article>
+        <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <a href="https://simpli-web.app.link/e/GHGseoTXuFb"><div>
+            <h3>Python for Beginners</h3>
+            <p>Simplilearn</p>
+          </div>
+        </a>
+        
+        
+        <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <a href="https://simpli-web.app.link/e/H21ha58XuFb"><div>
+            <h3>R programming </h3>
+            <p>Simplilearn</p>
+          </div>
+        </a>
+
+        </article>
+        
+        
+      </div>
+    </div>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:hardikdulani66@gmail.com">hardikdulani66@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hardik-dulani-6a2165197/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
